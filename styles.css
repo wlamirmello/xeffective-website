@@ -4,6 +4,8 @@
 @font-face { font-family: "Space Grotesk"; font-style: normal; font-weight: 400; font-display: swap; src: url("/fonts/space-grotesk-latin-400.woff2") format("woff2"); }
 @font-face { font-family: "Space Grotesk"; font-style: normal; font-weight: 600; font-display: swap; src: url("/fonts/space-grotesk-latin-600.woff2") format("woff2"); }
 @font-face { font-family: "Space Grotesk"; font-style: normal; font-weight: 700; font-display: swap; src: url("/fonts/space-grotesk-latin-700.woff2") format("woff2"); }
+/* Tag font: Cascadia Mono subset to the characters of say "Cross-Effective" only, renamed per OFL (see /fonts/OFL-CascadiaMono.txt). */
+@font-face { font-family: "Xeffective Tag Mono"; font-style: normal; font-weight: 400; font-display: swap; src: url("/fonts/xeffective-tag-mono-400.woff2") format("woff2"); }
 
 :root {
   --bg: #FAFAF9;
@@ -31,15 +33,15 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #111315;
-    --bg-alt: #171A1D;
+    --bg: #14171C;            /* brand ink */
+    --bg-alt: #1A1E23;
     --surface: #1C2024;
     --text: #E8E6E3;
     --muted: #A7ADB4;
     --border: #2D3238;
     --accent: #F59E0B;
     --accent-hover: #FBBF24;
-    --on-accent: #111315;
+    --on-accent: #14171C;
     /* Logo symbol, "on dark" version */
     --logo-main: #E8EAED;
     --logo-blue: #7FB3E0;
@@ -106,7 +108,7 @@ a:hover { color: var(--accent-hover); }
 .wm-name { font-family: var(--brand-font); font-size: 1.15rem; letter-spacing: -0.01em; }
 .wm-x { font-weight: 600; }
 .wm-sys { font-weight: 400; color: var(--muted); }
-.wm-say { font-family: var(--mono); font-size: .72rem; color: var(--muted); margin-top: .15rem; }
+.wm-say { font-family: "Xeffective Tag Mono", var(--mono); font-size: .72rem; color: var(--muted); margin-top: .15rem; }
 
 nav ul { display: flex; gap: 1.4rem; list-style: none; margin: 0; padding: 0; align-items: center; }
 nav a { color: var(--muted); text-decoration: none; font-size: .95rem; font-weight: 550; }
